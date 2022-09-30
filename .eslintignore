@@ -1,0 +1,10 @@
+config
+coverage
+dist
+node_modules
+resources
+test-result
+utilities
+jest.setup.js
+*.md
+cypress

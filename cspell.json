@@ -1,0 +1,20 @@
+{
+    "version": "0.2",
+    "ignorePaths": [],
+    "dictionaryDefinitions": [],
+    "dictionaries": [],
+    "words": [
+        "appspot",
+        "bookself",
+        "Chakra",
+        "firebaseapp",
+        "Firestore",
+        "Parens",
+        "Sfjl",
+        "Svnpqt",
+        "VITE",
+        "XXWZT"
+    ],
+    "ignoreWords": [],
+    "import": []
+}
