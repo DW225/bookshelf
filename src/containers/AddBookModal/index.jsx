@@ -13,9 +13,9 @@ import {
   useDisclosure,
 } from '@chakra-ui/react'
 import { React, useRef, useState } from 'react'
-import { Book } from '../constant/bookSchema'
-import saveToFirebase from '../utils/saveToFirebase'
-import { capitalizeFirstLetter } from '../utils/utils'
+import { Book } from '../../constants/bookSchema'
+import { capitalizeFirstLetter } from '../../utils/utils'
+import { storeBook } from '../../utils/firebase'
 
 export default function AddBookModel() {
   const { isOpen, onOpen, onClose } = useDisclosure()
@@ -30,12 +30,12 @@ export default function AddBookModel() {
   }
 
   const save = () => {
-    saveToFirebase(book)
+    storeBook(book)
     onClose()
   }
 
   const addAnother = () => {
-    saveToFirebase(book)
+    storeBook(book)
   }
 
   return (

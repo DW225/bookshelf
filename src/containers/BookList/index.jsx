@@ -1,6 +1,6 @@
 import { Table, TableContainer, Th, Thead, Tr } from '@chakra-ui/react'
 import { React } from 'react'
-import { Book } from '../constant/bookSchema'
+import { Book } from '../../constants/bookSchema'
 
 export default function BookList() {
   return (

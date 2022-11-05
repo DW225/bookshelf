@@ -1,15 +1,21 @@
 import { React } from 'react';
+import { Grid, GridItem } from '@chakra-ui/react';
 import Header from './Header/Header';
-import { firebase, appCheck } from './utils/firebase';
-import BookList from './BookList/BookList';
+import { appCheck } from './utils/firebase';
+import BookList from './containers/BookList';
 
 export default function App() {
-  const app = firebase()
-  appCheck(app)
+  appCheck()
   return (
-    <>
-      <Header />
-      <BookList />
-    </>
+    <Grid templateAreas={`"header"
+                          "main"`}
+    >
+      <GridItem area='header'>
+        <Header />
+      </GridItem>
+      <GridItem area='main'>
+        <BookList />
+      </GridItem>
+    </Grid>
   );
 }

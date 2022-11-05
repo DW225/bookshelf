@@ -1,6 +1,6 @@
 import { Stack } from '@chakra-ui/react'
 import { React } from 'react'
-import AddBookModel from '../AddBookModal/AddBookModal'
+import AddBookModel from '../containers/AddBookModal'
 
 export default function Header() {
   return (

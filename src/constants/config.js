@@ -7,3 +7,5 @@ export const firebaseConfig = {
   appId: '1:61014727006:web:c7fb940afbfb6dff4497cf',
   measurementId: 'G-9XXWZT3P0C'
 }
+
+export const RECAPTCHA_SITE_KEY = '6LehejgiAAAAAC1T8Klt1XffvfQfo05X3VRrKBED'
